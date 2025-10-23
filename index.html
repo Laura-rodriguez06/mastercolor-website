@@ -1,123 +1,213 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>MasterColor - Tintura y Restauración de Cuero</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterColor | Tintura y Restauración de Cuero</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <!-- Header -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="logo">
-          <img src="images/logo.png" alt="MasterColor" />
-        </div>
-        <nav class="main-nav">
-          <a href="#servicios">Servicios</a>
-          <a href="#galeria">Galería</a>
-          <a href="#nosotros">Nosotros</a>
-        </nav>
-      </div>
-    </header>
 
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container">
+  <body>
+    <!-- Encabezado -->
+    <header class="header">
+      <nav class="navbar">
+        <img src="./images/logo.png" alt="MasterColor logo" class="logo" />
+        <ul class="nav-links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria" >Galería</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
         <h1>Tintura y Restauración de Cuero</h1>
         <p>Trabajamos con equipos profesionales y el color que usted desee.</p>
-        <a
-          class="btn-cta"
-          href="https://wa.me/573107711466?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20MasterColor"
-          >Contáctenos</a
+        <a href="https://w.app/mastercolor" class="btn"
+          >Contáctenos por WhatsApp</a
         >
-      </div>
-    </section>
+      </section>
+    </header>
 
-    <!-- Servicios -->
+    <!-- Sección Servicios -->
     <section id="servicios" class="servicios">
-      <div class="container">
-        <h2>Nuestros Servicios</h2>
-        <p class="lead">
-          Expertos en restauración, tintura y renovación de artículos en cuero.
-        </p>
+      <h2>Nuestros Servicios</h2>
+      <p>
+        Expertos en restauración, tintura y renovación de artículos en cuero con
+        acabados de alta calidad.
+      </p>
 
-        <div class="cards">
-          <article class="card">
-            <img src="images/icon-chaqueta.png" alt="" />
-            <h3>Chaquetas de cuero</h3>
-            <p>
-              Devolvemos el color y la textura original de tus chaquetas
-              favoritas.
-            </p>
-          </article>
+      <div class="servicios-grid">
+        <div class="card">
+          <img src="./images/Renovacion.png" alt="Restauración de cuero" />
+          <h3>Restauración de cuero</h3>
+          <p>
+            Devolvemos el color, suavidad y resistencia a tus prendas y piezas
+            favoritas.
+          </p>
+        </div>
 
-          <article class="card">
-            <img src="images/icon-zapatos.png" alt="" />
-            <h3>Zapatos y zapatillas</h3>
-            <p>Recupera el brillo y la suavidad de tu calzado en cuero.</p>
-          </article>
+        <div class="card">
+          <img src="./images/shoe.png" alt="Zapatos y zapatillas" />
+          <h3>Zapatos y zapatillas</h3>
+          <p>
+            Tintura y pulido profesional para que su calzado luzca como nuevo.
+          </p>
+        </div>
 
-          <article class="card">
-            <img src="images/icon-bolso.png" alt="" />
-            <h3>Maletines y bolsos</h3>
-            <p>Renovamos bolsos y maletines, dejándolos como nuevos.</p>
-          </article>
+        <div class="card">
+          <img src="./images/seater-sofa.png" alt="Bolsos y maletines" />
+          <h3>Muebles y accesorios</h3>
+          <p>Renovamos color y textura, conservando el diseño original.</p>
+        </div>
 
-          <article class="card">
-            <img src="images/icon-auto.png" alt="" />
-            <h3>Cojinería de autos</h3>
-            <p>Renovamos asientos en cuero con acabados profesionales.</p>
-          </article>
+        <div class="card">
+          <img src="./images/car.png" alt="Cojinería de autos" />
+          <h3>Cojinería de autos</h3>
+          <p>
+            Reparamos y renovamos asientos en cuero con acabados resistentes y
+            duraderos.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="./images/paint.png" alt="Variedad de colores" />
+          <h3>Variedad de colores</h3>
+          <p>
+            Amplia paleta de tonos para elegir el que mejor se adapte a su
+            estilo.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="/images/leather.png" alt="Envejecidos de calidad" />
+          <h3>Envejecidos de calidad</h3>
+          <p>Acabados artesanales que otorgan un look clásico y sofisticado.</p>
         </div>
       </div>
     </section>
 
-    <!-- Nosotros -->
+
+    <section id="galeria" class="galeria">
+  <h2 class="galeria__titulo">Galería de trabajos</h2>
+  <p class="galeria__descripcion">
+    Algunos de nuestros procesos de restauración y resultados finales.
+  </p>
+
+  <div class="galeria__contenedor">
+    <!-- Caso con antes y después -->
+    <div class="galeria__item doble">
+      <div class="galeria__imagen">
+        <img src="./images/Galeria/antes/toyotaant.jpg" alt="Antes">
+        <p class="etiqueta">Antes</p>
+      </div>
+      <div class="galeria__imagen">
+        <img src="./images/Galeria/proceso/toyotaprc.jpg" alt="proceso">
+        <p class="etiqueta">Proceso</p>
+      </div>
+      <div class="galeria__imagen">
+        <img src="./images/Galeria/despues/toyotafin.jpg" alt="Después">
+        <p class="etiqueta">Después</p>
+      </div>
+    </div>
+
+
+      <div class="galeria__item doble">
+      <div class="galeria__imagen">
+        <img src="./images/Galeria/antes/manubrioant.jpg" alt="Antes">
+        <p class="etiqueta">Antes</p>
+      </div>
+      <div class="galeria__imagen">
+        <img src="./images/Galeria/proceso/manubrioprc.jpg" alt="proceso">
+        <p class="etiqueta">Proceso</p>
+      </div>
+      <div class="galeria__imagen">
+        <img src="./images/Galeria/despues/manubriofin.jpg" alt="Después">
+        <p class="etiqueta">Después</p>
+      </div>
+    </div>
+
+
+      <div class="galeria__item doble">
+      <div class="galeria__imagen">
+        <img src="./images/Galeria/antes/tenisant.jpg" alt="Antes">
+        <p class="etiqueta">Antes</p>
+      </div>
+      <div class="galeria__imagen">
+        <img src="./images/Galeria/despues/tenisfin.jpg" alt="Después">
+        <p class="etiqueta">Después</p>
+      </div>
+    </div>
+
+    <!-- Caso con solo resultado final -->
+    <div class="galeria__item simple">
+      <div class="galeria__imagen">
+        <img src="images/galeria/despues/Sofa.jpg" alt="Resultado final">
+        <p class="etiqueta">Resultado final</p>
+      </div>
+    </div>
+
+     <div class="galeria__item simple">
+      <div class="galeria__imagen">
+        <img src="images/galeria/despues/sofalado.jpg" alt="Resultado final">
+        <p class="etiqueta">Resultado final</p>
+      </div>
+    </div>
+
+
+     <div class="galeria__item simple">
+      <div class="galeria__imagen">
+        <img src="images/galeria/despues/botasfin.jpg" alt="Resultado final">
+        <p class="etiqueta">Resultado final</p>
+      </div>
+    </div>
+    </section>
+    
+    <!-- Sección Nosotros -->
     <section id="nosotros" class="nosotros">
-      <div class="container nosotros-grid">
-        <div class="nosotros-text">
-          <h2>Nosotros</h2>
-          <p>
-            <strong>MasterColor</strong> nació de la pasión por el cuero. Con
-            más de 20 años de experiencia en tintura, envejecidos y
-            restauración, ofrecemos acabados únicos y atención personalizada.
-          </p>
-        </div>
-        <div class="nosotros-img">
-          <img src="images/maestro.jpg" alt="Taller MasterColor" />
-        </div>
+      <div class="nosotros-texto">
+        <h2>Nosotros</h2>
+        <p>
+          Nuestra historia comenzó en un pequeño taller, donde el señor Barragán
+          dio sus primeros pasos como pintor de cuero. Más de 20 años de
+          experiencia en empresas reconocidas le permitieron perfeccionar la
+          preparación de colores, lacas y envejecidos. Hoy esa pasión se refleja
+          en cada trabajo, ofreciendo renovaciones de alta calidad y acabados
+          únicos.
+        </p>
+      </div>
+      <div class="nosotros-img">
+        <img src="./images/maestro.jpg" alt="Taller de restauración" />
       </div>
     </section>
+<footer id="contacto" class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Contáctanos</h3>
+      <p>Trabajamos dentro y fuera de la ciudad ¡Llamanos!</p>
+      <p><strong>WhatsApp:</strong> +57 310 7711466</p>
+      <p><strong>Teléfono:</strong> +57 312 3397243</p>
+      <p><strong>Email:</strong> contacto.mastercolor@gmail.com</p>
+    </div>
 
-    <!-- Contacto / Footer -->
-    <footer class="site-footer" id="contacto">
-      <div class="container footer-grid">
-        <div class="footer-contact">
-          <h3>Contáctanos</h3>
-          <p>
-            WhatsApp: <a href="https://wa.me/573107711466">+57 310 7711466</a>
-          </p>
-          <p>
-            Email:
-            <a href="mailto:contacto.mastercolor@gmail.com"
-              >contacto.mastercolor@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="footer-redes">
-          <h3>Síguenos</h3>
-          <a
-            href="https://www.facebook.com/Mauriciobarragansalcedo"
-            target="_blank"
-            >Facebook</a
-          >
-          <a href="https://wa.me/573107711466" target="_blank">WhatsApp</a>
-        </div>
+    <div class="footer-section">
+      <h3>Síguenos</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1SBcHnQFGd/" target="_blank">
+          <img src="./images/icons/facebook.png" alt="Facebook" />
+        </a>
+        <a href="https://wa.me/573107711466" target="_blank">
+          <img src="./images/icons/whatsapp.png" alt="WhatsApp" />
+        </a>
       </div>
-      <div class="creds">© MasterColor - 2025</div>
-    </footer>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
-</html>
+  <p class="footer-copy">
+    © MasterColor — 2025. Autorización tratamiento de datos personales.
+  </p>
+</footer>
